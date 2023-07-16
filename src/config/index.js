@@ -1,8 +1,5 @@
-const dotenv= require('dotenv');
-
-dotenv.config();
-
 module.exports={
 
-    PORT:process.env.PORT
+  Server_config:require('./Server_config'),
+    MAILER:require('./email-config')
 }
