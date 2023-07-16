@@ -6,5 +6,6 @@ module.exports={
 
     Info:info,
     makeAirplane:require('./airplane_controller.js'),
+    Ticketcontroller:require('./email-controller.js')
 
 }
