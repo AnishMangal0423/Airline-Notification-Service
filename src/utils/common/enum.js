@@ -1,13 +1,11 @@
-const seatType={
+const Ticket_status={
 
-      BUSSINESS:"business",
-      ECONOMY:"economy",
-      PREMIUM_ECONOMY:"premium_economy",
-      FIRST_CLASS:"first_class",
-
+      PENDING:'pending',
+      SUCCESS:'success',
+      FAILED:'failed',
 }
 
 module.exports={
 
-    seatType
+     Ticket_status
 }
