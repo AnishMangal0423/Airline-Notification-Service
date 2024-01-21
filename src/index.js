@@ -18,8 +18,12 @@ async function connectQueue(){
 
     // console.log(`${Buffer.from(data.content)}`)
     
-    const object= JSON.parse(Buffer.from(data.content).toString());
-    await email_Service.sendEmail("mangalanisha692@gmail.com" ,object.recepientEmail , object.subject , object.text )
+    const object= JSON.parse(`${Buffer.from(data.content)}`);
+
+console.log(object)
+    // console.log(object.recepientEmail)
+
+    await email_Service.sendEmail("mangalanisha692@gmail.com" ,object.recepientEmail , object.subject, object.text)
     channel.ack(data)
   })
 
@@ -45,6 +49,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use("/api", mountRoutes);
+
 
 
 

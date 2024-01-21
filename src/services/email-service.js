@@ -14,10 +14,12 @@ async function sendEmail(mailFrom , mailTo , subject , text){
         text:text
       })
 
+      console.log("rrresponse"+response)
+
       return response;
 
     } catch (error) {
-    console.log(error);
+    console.log("eeror"+error);
     throw error;    
 
     }
